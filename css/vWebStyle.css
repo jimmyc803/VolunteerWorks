@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles - Applies to all HTML files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Ariel, sans-serif, Aruak; /* Sets fonts and backups */
+}
+
+/* Shared Header Styles */
+.header {
+    background-color:darkgrey; /* Optional: matches your current background */
+    padding: 20px; /* Adjust spacing around the header */
+}
+
+.logo-container {
+    display: flex; /* Aligns the logo and text side by side */
+    align-items: center; /* Vertically centers the logo with the text */
+    gap: 15px; /* Adds spacing between the logo and the text */
+}
+
+.logo-container img {
+    width: 100px; /* Adjust logo size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.text-container h1 {
+    color: white; /* Ensures text stands out */
+    margin: 0; /* Removes default margins */
+    font-size: 24px; /* Adjust as needed */
+}
+
+.text-container p {
+    color: white; /* Ensures text stands out */
+    margin: 0; /* Removes default margins */
+    font-size: 16px; /* Adjust as needed */
+}
+
+/* Shared Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #2C3E50; /* Brown background for the navigation bar */
+    color: white; /* White text color */
+    padding: 10px;
+}
+
+.nav-bar a {
+    color: white; /* White text color */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 14px; /* Sets font size */
+    padding: 10px; /* Adds padding to the links */
+}
+
+.nav-bar a:hover {
+    background-color: #00A9E0; /* Changes background color on hover */
+    border-radius: 3px; /* Adds rounded corners to hovered links */
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex; 
+    gap: 20px; 
+}
+
+/* ---------------------------- */
+
+/* Styles for Home Page */
+#home-page .content {
+    padding: 20px; /* Adds padding around the content area */
+    text-align: center; /* Centers the text inside the content */
+}
+
+/* Styles for About Page */
+#about-page .team-list {
+    list-style: none; /* Removes bullets from the list */
+    padding: 0; /* Removes padding */
+}
+
+#about-page .team-list li {
+    font-size: 18px; /* Sets the font size for each list item */
+    margin: 5px 0; /* Adds margin between list items */
+}
+
+.container {
+    display: relative;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+/* Button container style */
+.button-container {
+    width: 240px;
+    height: 40px;
+    margin: 5px 10px;
+    position: relative;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  /* Slider */
+  #btn {
+    position: absolute;
+    height: 100%;
+    width: 120px; /* Half the width of the container */
+    background: lightseagreen;
+    border-radius: 20px;
+    transition: left 0.3s ease;
+    left: 0; /* Default position */
+    z-index: 0;
+  }
+  
+  /* Buttons */
+  .toggle-btn {
+    flex: 1; /* Ensures both buttons occupy equal space */
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1; /* Ensures text is above the slider */
+    text-align: center;
+  }
+  
+  .toggle-btn:focus {
+    outline: none;
+  }
+  
